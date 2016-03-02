@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  a {
+  	font-size: 18pt;
+  	font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+	<a href="https://learn.javascript.ru/task/check-if-out-range">Условие задачи</a>
+	<!-- 
+		Напишите условие if для проверки того факта, что age НЕ находится между 14 и 90 включительно.
+
+		Сделайте два варианта условия: первый с использованием оператора НЕ !, второй – без этого оператора.
+ 	-->
+	<script>
+		var age = prompt('Ваш возраст?','');
+		if (!(age >= 14 && age <= 90)) /* (age <= 14 || age >= 90) */ {
+			alert('Вам '+age+' лет и Вы нам подходтие!')
+		} else {
+			alert('Вы нам не подходите!')
+		};
+	</script>
+</body>
+</html>

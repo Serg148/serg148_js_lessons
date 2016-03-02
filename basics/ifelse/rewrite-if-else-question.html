@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  a {
+  	font-size: 18pt;
+  	font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+	<a href="https://learn.javascript.ru/task/rewrite-if-else-question">Условие задачи</a>
+	<!-- Перепишите if..else с использованием нескольких операторов '?'. 
+	Для читаемости – оформляйте код в несколько строк.
+
+ -->
+	<script>
+		var login = prompt('Ваше имя?','');
+		var message = (login == 'Вася') ? 'Привет!' :
+			(login == 'Директор') ? 'Здравствуйте!' :
+			(login == '') ? 'Нет логина' :
+			'';
+		alert( message );
+	</script>
+</body>
+</html>
