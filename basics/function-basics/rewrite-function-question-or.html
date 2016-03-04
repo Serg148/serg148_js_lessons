@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  a {
+  	font-size: 18pt;
+  	font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+	<a href="https://learn.javascript.ru/task/rewrite-function-question-or">Условие задачи</a>
+	<!-- 
+		Перепишите функцию, чтобы она делала то же самое, но без if, в одну строку. Сделайте два варианта функции checkAge:
+
+		1. Используя оператор '?'
+		2. Используя оператор ||
+ 	-->
+	<script>
+		function checkAge(age) {
+  			return (age > 18) ? true : confirm('Родители разрешили?');
+  			/* return (age > 18) return true || return confirm('Родители разрешили?'); */
+		}
+		var age = +prompt('Сколько Вам лет?', '');
+		if (checkAge(age)) {
+  				alert( 'Доступ разрешен' );
+			} else {
+  				alert( 'В доступе отказано' );
+			}
+	</script>
+</body>
+</html>
