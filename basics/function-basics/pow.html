@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  a {
+  	font-size: 18pt;
+  	font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+	<a href="https://learn.javascript.ru/task/pow">Условие задачи</a>
+	<!-- 
+		Напишите функцию pow(x,n), которая возвращает x в степени n. Иначе говоря, умножает x на себя n раз и возвращает результат.
+ 	-->
+	<script>
+		function isInteger(n) {
+  			return (n ^ 0) === n;
+		}
+
+		var x = +prompt('Введите число!',''), 
+			n = +prompt('Введите степень!',''),
+			i = x;
+		if (n>1 && isInteger(n)) {
+			for (; n > 1 ; n--) {
+				i = i * x;
+			};
+			alert(i);	
+		} else {
+			alert('Вы ввели неправильно степень. Степень должно быть положительным и целым числом');
+			n = +prompt('Введите корректно степень еще раз');
+		}
+		
+
+	</script>
+</body>
+</html>
